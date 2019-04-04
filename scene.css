@@ -1,0 +1,250 @@
+body{
+     background-color: #6666ff;
+     overflow:hidden 
+}
+
+.skys{
+	display:none;
+}
+
+
+ #light{
+     width: 15px;
+     height: 15px;
+     border-radius: 50px;
+     background-color: yellow;
+     animation-name: ani_light;
+     animation-duration: 4s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+ #lorry {
+     width:40px;
+     height:47px;
+     position: relative;
+     animation:ani_lorry 3s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+ #car {
+     width:40px;
+     height:40px;
+     position: relative;
+     animation:ani_car 5s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+ #rain1 {
+     width:30px;
+     height:27px;
+     position: relative;
+     animation:ani_rain1 6s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+ #rain2 {
+     width:30px;
+     height:27px;
+     position: relative;
+     animation:ani_rain2 6s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+ #rain3 {
+     width:30px;
+     height:27px;
+     position: relative;
+     animation:ani_rain3 6s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+ @keyframes ani_lorry {
+     from {
+         top: 350;
+         left: -100;
+    }
+     to {
+         top: 350px;
+         left: 1400px;
+    }
+}
+ @keyframes ani_car {
+     from {
+         top: 350px;
+         left: 1400;
+    }
+     to {
+         top: 350px;
+         left: -100px;
+    }
+}
+ @keyframes ani_rain1 {
+     from {
+         top: 00px;
+         left: 0;
+    }
+     to {
+         top: 150px;
+         left: 150px;
+    }
+}
+ @keyframes ani_rain2 {
+     from {
+         top: 00px;
+         left: 450;
+    }
+     to {
+         top: 150px;
+         left: 600px;
+    }
+}
+ @keyframes ani_rain3 {
+     from {
+         top: 00px;
+         left: 900;
+    }
+     to {
+         top: 150px;
+         left: 1050px;
+    }
+}
+ @keyframes ani_light {
+     0% {
+        background-color: yellow;
+    }
+     50% {
+        background-color: black;
+    }
+     100% {
+        background-color: yellow;
+    }
+     from {
+         top: 160px;
+         left: 450;
+    }
+     to {
+         top: 160px;
+         left: 450px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+	.skys{
+	display:block;
+}
+	.skyl{
+	display:none;
+}
+
+ #light{
+     width: 5px;
+     height: 5px;
+     border-radius: 50px;
+ }
+
+ @keyframes ani_lorry {
+	 
+    0% {
+        transform: scale(0.29);
+    }
+    100% {
+        transform: scale(0.29);
+    }
+     from {
+         top: 0;
+         left: -100;
+    }
+     to {
+         top: 0px;
+         left: 650px;
+    }
+}
+ @keyframes ani_car {
+	0% {
+        transform: scale(0.29);
+    }
+    100% {
+        transform: scale(0.29);
+    }
+     from {
+         top: 30px;
+         left: 400;
+    }
+     to {
+         top: 30px;
+         left: -100px;
+    }
+}
+ @keyframes ani_rain1 {
+    0% {
+        transform: scale(0.29);
+    }
+    100% {
+        transform: scale(0.29);
+    }    
+	from {
+         top: 00px;
+         left: 0;
+    }
+     to {
+         top: 43px;
+         left: 43px;
+    }
+}
+ @keyframes ani_rain2 {
+    0% {
+        transform: scale(0.29);
+    }
+    100% {
+        transform: scale(0.29);
+    }    
+	from {
+         top: 00px;
+         left: 130;
+    }
+     to {
+         top: 43px;
+         left: 173px;
+    }
+}
+ @keyframes ani_rain3 {
+    0% {
+        transform: scale(0.29);
+    }
+    100% {
+        transform: scale(0.29);
+    }    
+	from {
+         top: 00px;
+         left: 270;
+    }
+     to {
+         top: 43px;
+         left: 313px;
+    }
+}
+ @keyframes ani_light {
+     0% {
+        background-color: yellow;
+    }
+     50% {
+        background-color: black;
+    }
+     100% {
+        background-color: yellow;
+    }
+     from {
+         top: 55px;
+         left: 135px;
+    }
+     to {
+         top: 55px;
+         left: 135px;
+    }
+}
+
+
+	
+}
+
